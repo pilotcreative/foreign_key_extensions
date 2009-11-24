@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
      "test/test_helper.rb",
      "uninstall.rb"
   ]
-  s.homepage = %q{http://github.com/limonka/foreign_key_extensions}
+  s.homepage = %q{http://github.com/objectreload/foreign_key_extensions}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}

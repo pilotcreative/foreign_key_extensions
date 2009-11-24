@@ -5,9 +5,9 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "objectreload-foreign_key_extensions"
-    gem.summary = "Simple way to create foreign key for migration files."
+    gem.summary = "Simple way to create foreign keys in migration files."
     gem.email = "gems@objectreload.com"
-    gem.homepage = "http://github.com/limonka/foreign_key_extensions"
+    gem.homepage = "http://github.com/objectreload/foreign_key_extensions"
     gem.authors = ["Mateusz Drozdzynski"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
