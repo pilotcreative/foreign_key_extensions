@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Mateusz Drozdzynski"]
-  s.date = %q{2009-10-20}
+  s.authors = ["Mateusz Drożdżyński"]
+  s.date = %q{2010-02-16}
   s.email = %q{gems@objectreload.com}
   s.extra_rdoc_files = [
     "README"
@@ -19,10 +19,10 @@ Gem::Specification.new do |s|
      "README",
      "Rakefile",
      "VERSION",
-     "init.rb",
      "install.rb",
      "lib/foreign_key_extensions.rb",
      "objectreload-foreign_key_extensions.gemspec",
+     "rails/init.rb",
      "test/foreign_key_extensions_test.rb",
      "test/test_helper.rb",
      "uninstall.rb"
@@ -31,10 +31,10 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{Simple way to create foreign key in migrate files.}
+  s.summary = %q{Simple way to create foreign keys in migration files.}
   s.test_files = [
-    "test/foreign_key_extensions_test.rb",
-     "test/test_helper.rb"
+    "test/test_helper.rb",
+     "test/foreign_key_extensions_test.rb"
   ]
 
   if s.respond_to? :specification_version then

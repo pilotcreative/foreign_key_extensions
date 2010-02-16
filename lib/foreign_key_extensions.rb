@@ -11,7 +11,11 @@ module ForeignKeyExtensions
     constraint = constraint_name(from_table, from_column)
 
     failsafe do
-      execute %{alter table #{from_table} drop constraint #{constraint}}
+      if mysql?
+        execute %{alter table #{from_table} drop foreign key #{constraint}}
+      else
+        execute %{alter table #{from_table} drop constraint #{constraint}}
+      end
     end
   end
 
@@ -20,6 +24,10 @@ module ForeignKeyExtensions
   end
 
   protected
+
+  def mysql?
+    ActiveRecord::Base.connection.adapter_name == "MySQL"
+  end
 
   def failsafe(&block)
     begin
@@ -30,5 +38,3 @@ module ForeignKeyExtensions
     end
   end
 end
-
-ActiveRecord::Migration.send(:extend, ForeignKeyExtensions)

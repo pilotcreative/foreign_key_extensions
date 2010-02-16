@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'rubygems'
 require 'rake'
 
@@ -8,7 +9,7 @@ begin
     gem.summary = "Simple way to create foreign keys in migration files."
     gem.email = "gems@objectreload.com"
     gem.homepage = "http://github.com/objectreload/foreign_key_extensions"
-    gem.authors = ["Mateusz Drozdzynski"]
+    gem.authors = ["Mateusz Drożdżyński"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
